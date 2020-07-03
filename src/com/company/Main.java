@@ -6,17 +6,18 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Scanner liczbaX = new Scanner(System.in);
-        Scanner liczbaY = new Scanner(System.in);
+        Scanner X = new Scanner(System.in);
+        Scanner Y = new Scanner(System.in);
 
         System.out.print("Liczba x: ");
-        int x = liczbaX.nextInt();
+        String tmp = X.nextLine().replace(",", ".");
+        double x = Double.parseDouble(tmp);
         System.out.print("Liczba y: ");
-        int y = liczbaY.nextInt();
+        String tmp2 = X.nextLine().replace(",", ".");
+        double y = Double.parseDouble(tmp2);
 
-        int z = x + y;
+        double z = x + y;
 
         System.out.println(z);
-
     }
 }
